@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  resources :farm_products
+
+  resources :products
+
+  resources :categories
+
+  resources :farms
+
+  get 'main/index'
+  root 'main#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
